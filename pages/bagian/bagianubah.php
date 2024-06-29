@@ -19,7 +19,7 @@
             $nama = $_POST["nama"];
 
             $checkSQL = "SELECT * FROM bagian WHERE nama = '$nama' AND id=id";
-            $result = mysqli_query($connection,$sql);
+            $result = mysqli_query($connection, $sql);
                 if  (mysqli_num_rows($result) > 0){
                     ?>
                     <div class="alert alert-danger" role="alert">
